@@ -1,0 +1,25 @@
+@import '~@angular/material/theming';
+
+@mixin tile-theme($theme) {
+    $accent: map-get($theme, accent);
+    $background: map-get($theme, background);
+    $background-color: mat-color($background, card);
+
+    .tile {
+        @include mat-elevation(2);
+        background-color: mat-color($accent);
+        padding: 8rem;
+        min-height: 200px;
+        min-width: 200px;
+        
+        p {
+            color: $background-color;
+            font-family: 'Pacifico';
+            line-height: 2.4rem;
+            font-size: 2rem;
+            text-decoration-line: underline;
+        }
+
+        
+    }
+  }

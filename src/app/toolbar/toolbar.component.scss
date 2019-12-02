@@ -1,0 +1,42 @@
+@import '~@angular/material/theming';
+
+mat-toolbar-row {
+    justify-content: space-between;
+}
+
+mat-slide-toggle {
+    font-size: .875rem;
+    margin-left: 20px;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+
+.fonts-inc-dic{
+    padding-left: 10px;
+}
+
+
+
+
+@mixin toolbar-theme($theme) {
+    $accent: map-get($theme, accent);
+    $background: map-get($theme, background);
+    $background-color: mat-color($background, card);
+        
+        p {
+            color: $background-color;
+            font-family: 'Pacifico';
+            line-height: 2.4rem;
+            font-size: 2rem;
+        }
+
+        /* .mat-app-background{
+            color: black;
+        }
+ */
+    }
+   
+  

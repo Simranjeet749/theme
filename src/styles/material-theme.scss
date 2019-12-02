@@ -1,0 +1,54 @@
+@import '~@angular/material/theming';
+@import './component-themes';
+
+
+@include mat-core();
+
+/* $primary: mat-palette($mat-indigo);
+$accent: mat-palette($mat-green, A200, A100, A400);
+$warn: mat-palette($mat-red);
+$theme: mat-light-theme($primary, $accent, $warn);
+
+@include angular-material-theme($theme);
+@include component-themes($theme);
+ */
+
+ $custom-theme-primary: mat-palette($mat-grey);
+ $custom-theme-accent:mat-palette($mat-pink, 100, A100, A400);
+ $custom-theme-warn: mat-palette($mat-red);
+ $custom-theme: mat-light-theme($custom-theme-primary, $custom-theme-accent, $custom-theme-warn);
+ @include angular-material-theme($custom-theme);
+ @include component-themes($custom-theme);
+
+// Our dark theme
+/* .dark-theme-black {
+  
+$dark-primary: mat-palette($mat-indigo);
+  $dark-accent:  mat-palette($mat-red, A400, A100, A700);
+  $dark-warn:    mat-palette($mat-red);
+  $dark-theme: mat-dark-theme($dark-primary, $dark-accent, $dark-warn);
+  
+  @include angular-material-theme($dark-theme);
+  @include component-themes($dark-theme);
+} */
+
+.dark-theme-white {
+  $dark-primary: mat-palette($mat-yellow);
+  $dark-accent:  mat-palette($mat-red, A400, A100, A700);
+  $dark-warn:    mat-palette($mat-red);
+  $dark-theme: mat-dark-theme($dark-primary, $dark-accent, $dark-warn);
+  
+  @include angular-material-theme($dark-theme);
+  @include component-themes($dark-theme);
+}
+
+/* .dark-theme-blue {
+  $dark-primary: mat-palette($mat-blue);
+  $dark-accent:  mat-palette($mat-amber, A400, A100, A700);
+  $dark-warn:    mat-palette($mat-red);
+  $dark-theme: mat-dark-theme($dark-primary, $dark-accent, $dark-warn);
+  
+  @include angular-material-theme($dark-theme);
+  @include component-themes($dark-theme);
+}
+ */

@@ -1,0 +1,33 @@
+@import '~@angular/material/theming';
+
+
+td-toolbar {
+    position: sticky;
+    position: -webkit-sticky; /* For macOS/iOS Safari */
+    top: 0; /* Sets the sticky toolbar to be on top */
+    z-index: 1000; /* Ensure that your app's content doesn't overlap the toolbar */
+}
+
+td-toolbar {
+    @include mat-elevation(2);
+    display: block;
+}
+
+.content {
+    padding: 0rem 0px;
+    display: flex;
+}
+
+aside {
+    flex: 1;
+}
+
+td-dashboard {
+    flex: 5;
+}
+
+@media only screen and (max-width: 600px)  {
+    aside {
+      flex: 0;
+    }
+  }

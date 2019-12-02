@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Pacifico');
+@import '~@angular/material/theming';
+@import './styles/material-theme';
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+@media only screen and (max-width: 600px)  {
+  html {
+    font-size: 80%;
+  }
+}
