@@ -9,17 +9,6 @@ mat-slide-toggle {
     margin-left: 20px;
 }
 
-h2 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
-}
-
-.fonts-inc-dic{
-    padding-left: 10px;
-}
-
-
-
 
 @mixin toolbar-theme($theme) {
     $accent: map-get($theme, accent);
@@ -32,11 +21,9 @@ h2 {
             line-height: 2.4rem;
             font-size: 2rem;
         }
-
-        /* .mat-app-background{
-            color: black;
-        }
- */
     }
    
   
+    .mat-grid-list{
+        background:#fff;
+    }

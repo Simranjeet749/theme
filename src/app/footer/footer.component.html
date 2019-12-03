@@ -1,32 +1,38 @@
-<mat-toolbar>
-    <mat-toolbar-row>
-        <h1>Acessibilidade</h1>
-        <span class="fonts-inc-dic">
-            <a href="javascript:void(0);" class="increase font-weight-bold pl-3">A+</a> |
-            <a href="javascript:void(0);" class="decrease">A-</a>
-        </span>
-        <p class="change-color-text">Contraste:</p>
-        <ul id="switcher">
-            <li style="color: blue;" (click)="toggleDarkTheme(isDarkTheme)"></li>
-            <li style="color: white;" (click)="toggleDarkTheme(isDarkTheme)"></li>
-            <li style="color: black;" (click)="toggleDarkTheme(isDarkTheme)"></li>
-        </ul>
+<mat-grid-list cols="2" class="footer-card">
+    <mat-grid-tile>
+        <mat-card class="footer-card-theme">
+            <div>
+                <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+                    alt="Photo of a Shiba Inu">
+            </div>
+            <div>
+            <mat-card-content>
+                <p>
+                    The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from
+                    Japan.
+                    A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was
+                    originally
+                    bred for hunting.
+                </p>
+            </mat-card-content>
+            </div>
+        </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <mat-card>
+            <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+                alt="Photo of a Shiba Inu">
+            <mat-card-content>
+                <p>
+                    The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from
+                    Japan.
+                    A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was
+                    originally
+                    bred for hunting.
+                </p>
+            </mat-card-content>
+        </mat-card>
+    </mat-grid-tile>
 
-        <div>
-            <a mat-button href="https://github.com/eTallang/theme-demo">Github</a>
-            <mat-slide-toggle [checked]="isDarkTheme | async" labelPosition="before"
-                (change)="toggleDarkTheme($event.checked)">Dark theme</mat-slide-toggle>
-        </div>
 
-
-    </mat-toolbar-row>
-
-</mat-toolbar>
-
-<div class="toolbar-theme">
-    <mat-toolbar class="mat-app-background">
-        <mat-toolbar-row>
-            <img src="../assets/images/questions-mark.png"> <span class="pl-2">Duvidas </span>
-        </mat-toolbar-row>
-    </mat-toolbar>
-</div>
+</mat-grid-list>

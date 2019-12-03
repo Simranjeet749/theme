@@ -14,7 +14,7 @@
         
         p {
             color: $background-color;
-            font-family: 'Pacifico';
+            font-family: 'Poppins', sans-serif;
             line-height: 2.4rem;
             font-size: 2rem;
             text-decoration-line: underline;
@@ -23,3 +23,12 @@
         
     }
   }
+
+  p {
+    color:black;
+    font-family: 'Poppins', sans-serif;
+    line-height: 2.4rem;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration-line: none;
+}

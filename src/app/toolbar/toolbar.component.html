@@ -1,11 +1,17 @@
-<!-- <mat-subheader>Online Friends</mat-subheader> -->
-<mat-toolbar>
-  <mat-toolbar-row>
-    <a>Acessibilidade:</a>
-
-    <span>Second Row</span>
-  </mat-toolbar-row>
-</mat-toolbar>
+<div layout="row">
+  <mat-grid-list cols="2" fxFlex="20">
+    <mat-toolbar>
+      <mat-toolbar-row>
+        <p>Acessibilidade:</p>
+        <span class="fonts-inc-dic">
+          <a href="javascript:void(0);" class="increase font-weight-bold pl-3">A+</a> |
+          <a href="javascript:void(0);" class="decrease">A-</a>
+        </span>
+        <img src="../assets/images/questions-mark.png" width="25"> <span class="pl-2">Duvidas </span>
+      </mat-toolbar-row>
+    </mat-toolbar>
+  </mat-grid-list>
+</div>
 
 <mat-grid-list cols="3" rowHeight="75px" style="justify-content: space-between;">
   <mat-grid-tile>
@@ -42,54 +48,9 @@
       </mat-list-item>
     </mat-list>
     <button mat-button>...</button>
-    <!--  <mat-menu #menu="matMenu">
-      <button mat-menu-item>Item 1</button>
-      <button mat-menu-item>Item 2</button>
-    </mat-menu> -->
+
 
   </mat-grid-tile>
 
 
 </mat-grid-list>
-
-
-<!--     <h1>Acessibilidade</h1>
-    <span class="fonts-inc-dic">
-      <a href="javascript:void(0);" class="increase font-weight-bold pl-3">A+</a> |
-      <a href="javascript:void(0);" class="decrease">A-</a>
-    </span>
-    <p class="change-color-text">Contraste:</p>
-    <ul id="switcher">
-      <li style="color: blue;" (click)="toggleDarkTheme(isDarkTheme)"></li>
-      <li style="color: white;" (click)="toggleDarkTheme(isDarkTheme)"></li>
-      <li style="color: black;" (click)="toggleDarkTheme(isDarkTheme)"></li>
-    </ul>
-
-    <div>
-      <a mat-button href="https://github.com/eTallang/theme-demo">Github</a>
-      <mat-slide-toggle [checked]="isDarkTheme | async" labelPosition="before"
-        (change)="toggleDarkTheme($event.checked)">Dark theme</mat-slide-toggle>
-    </div> -->
-<!--     <mat-card>
-      <mat-list>
-        <mat-list-item>
-          <img mat-list-avatar src="..." alt="Desc 1">
-          <h3 mat-line>Title 1</h3>
-          <p mat-line>
-            <span>An awesome description</span>
-          </p>
-        </mat-list-item>
-      </mat-list>
-    </mat-card> -->
-
-
-
-<!-- <div class="toolbar-theme">
-  <mat-toolbar class="mat-app-background">
-
-
-    <mat-toolbar-row>
-      <img src="../assets/images/questions-mark.png"> <span class="pl-2">Duvidas </span>
-    </mat-toolbar-row>
-  </mat-toolbar>
-</div> -->

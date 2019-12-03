@@ -2,6 +2,7 @@ import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { CoreModule } from './core/core.module';
 import { ToolbarModule } from './toolbar/toolbar.module';
+import { FooterModule } from './footer/footer.module'
 import { DashboardModule } from './dashboard/dashboard.module';
 import { AppComponent } from './app.component';
 import { MatTabsModule } from '@angular/material/tabs';
@@ -57,6 +58,7 @@ import {
     MatCardModule,
     CoreModule,
     ToolbarModule,
+    FooterModule,
     DashboardModule,
     MatTabsModule
 

@@ -11,24 +11,154 @@
     .theme-slider {
         /* @include mat-elevation(2); */
         background-color: mat-color($accent); 
-        padding: 8rem; 
+        padding: 3rem 9rem 0 9rem;
+
       /*   min-height: 200px;
         min-width: 200px; */
         
         p {
             color: $background-color;
-            font-family: 'Roboto';
+            font-family: 'Poppins', sans-serif;
             line-height: 2.4rem;
             font-size: 2rem;
             text-decoration-line: underline;
         }
-        .container{
-            min-height: 200px;
-            min-width: 200px;
+     
+        .mat-card-content {
+          color: rgb(0, 128, 107) 
         }
     }
     
   }
 
 
+  p {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    line-height: 2.4rem;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration-line: none;
+}
+
+.left.carousel-control {
+  background-image: none;
+}
+.right.carousel-control {
+  background-image: none;
+}
+
+
+
+.mat-card:not([class*="mat-elevation-z"]) {
+  box-shadow: none;
+}
+
+.mat-card {
+  background: none;
+  color: 
+  rgba(0, 0, 0, 0.87);
+}
+
+.mat-card-image:first-child {
+  margin-top: -16px;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  border-radius: 10px;
+}
+
+
+
+
+/* border-radius: 10rem;
+
+height: 130px;
+
+width: 130px; */
+
+.left.carousel-control{
+  top: 91px;
+  text-align: inherit;
+  left: -30px;
+}
+.MS-left {
+  background-color: 
+  transparent;
+  border: 0;
+}
+.right.carousel-control{
+  top: 91px;
+  text-align: right;
+
+right: -27px;
   
+}
+.MS-right {
+  background-color: 
+  transparent;
+  border: 0;
+  
+}
+
+.card-resolution{
+  width: 400px;
+
+  height: 200px;
+}
+.card-resolution img{
+  object-fit: cover; /*this makes the image in src fit to the size specified below*/
+  width: 100%; /* Here you can use wherever you want to specify the width and also the height of the <img>*/
+  height: 100%;
+}
+.grid-fix.mat-grid-tile {
+
+  padding-top: calc(22%) !important;
+
+}
+
+.mat-figure {
+
+  text-align: center;
+
+}
+
+.theme-slider-card{
+  padding-bottom: calc(20%) !important;
+}
+
+  .card-content {
+
+    color: 
+
+    #fff !important;
+
+}
+.carousel-caption.text-left.py-lg-5.py-md-3 {
+
+  left: 10% !important;
+  text-align: left;
+  top: 54px;
+
+}
+.card-content {
+
+  font-size: 25px !important;
+
+}
+.heading {
+
+  padding-left: 11px;
+
+}
+.category-theme.mat-card img {
+
+  width: 120px;
+  height: 120px;
+  border-radius: 50% !important;
+  margin: 7px;
+}
+.mat-card-content p {
+
+  font-size: 12px;
+  padding-top: 15px;
+}

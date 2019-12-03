@@ -14,7 +14,7 @@ $theme: mat-light-theme($primary, $accent, $warn);
  */
 
  $custom-theme-primary: mat-palette($mat-grey);
- $custom-theme-accent:mat-palette($mat-pink, 100, A100, A400);
+ $custom-theme-accent:mat-palette($mat-indigo, 50, A100, A400);
  $custom-theme-warn: mat-palette($mat-red);
  $custom-theme: mat-light-theme($custom-theme-primary, $custom-theme-accent, $custom-theme-warn);
  @include angular-material-theme($custom-theme);
@@ -34,7 +34,7 @@ $dark-primary: mat-palette($mat-indigo);
 
 .dark-theme-white {
   $dark-primary: mat-palette($mat-yellow);
-  $dark-accent:  mat-palette($mat-red, A400, A100, A700);
+  $dark-accent:  mat-palette($mat-grey, 900, A100, A700);
   $dark-warn:    mat-palette($mat-red);
   $dark-theme: mat-dark-theme($dark-primary, $dark-accent, $dark-warn);
   

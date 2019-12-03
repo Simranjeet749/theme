@@ -1,6 +1,6 @@
 @import '~@angular/material/theming';
 
-/* @mixin tile-theme($theme) {
+@mixin tile-theme($theme) {
     $accent: map-get($theme, accent);
     $background: map-get($theme, background);
     $background-color: mat-color($background, card);
@@ -9,18 +9,25 @@
         @include mat-elevation(2);
         background-color: mat-color($accent);
         border: 1rem solid $background-color;
-        padding: 10rem;
         min-height: 200px;
         min-width: 200px;
-        
-        p {
-            color: black;
-            font-family: 'Pacifico';
-            line-height: 2.4rem;
-            font-size: 2rem;
-        }
+        padding: 10rem;
        
+    }
+    p {
+        color: background-color;
+        font-family: 'Pacifico';
+        line-height: 2.4rem;
+        font-size: 2rem;
+        text-decoration-line: none;
+        display: flex;
     }
    
   }
- */
+
+  .mat-icon {
+ 
+    color: 
+    gray;
+}
+
