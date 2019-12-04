@@ -8,14 +8,12 @@
     $background-color: mat-color($background, card);
 
     
-    .theme-slider {
-        /* @include mat-elevation(2); */
+    .section {
+        @include mat-elevation(2);
         background-color: mat-color($accent); 
-        padding: 3rem 9rem 0 9rem;
-
-      /*   min-height: 200px;
-        min-width: 200px; */
         
+        padding: 5rem 0rem 0 0rem;
+
         p {
             color: $background-color;
             font-family: 'Poppins', sans-serif;
@@ -76,23 +74,23 @@ height: 130px;
 
 width: 130px; */
 
-.left.carousel-control{
-  top: 91px;
-  text-align: inherit;
-  left: -30px;
-}
+// .left.carousel-control{
+//   top: 91px;
+//   text-align: inherit;
+//   left: -30px;
+// }
 .MS-left {
   background-color: 
   transparent;
   border: 0;
 }
-.right.carousel-control{
-  top: 91px;
-  text-align: right;
+// .right.carousel-control{
+//   top: 91px;
+//   text-align: right;
 
-right: -27px;
+// right: -27px;
   
-}
+// }
 .MS-right {
   background-color: 
   transparent;
@@ -117,21 +115,15 @@ right: -27px;
 }
 
 .mat-figure {
-
   text-align: center;
-
 }
 
 .theme-slider-card{
   padding-bottom: calc(20%) !important;
 }
 
-  .card-content {
-
-    color: 
-
-    #fff !important;
-
+.card-content {
+    color:#fff !important;
 }
 .carousel-caption.text-left.py-lg-5.py-md-3 {
 
@@ -162,3 +154,55 @@ right: -27px;
   font-size: 12px;
   padding-top: 15px;
 }
+
+// Start 04-Dec-2019 
+
+// .right.carousel-control{
+//   text-align: right;
+// }
+// .left.carousel-control{
+//   text-align: left;
+// }
+
+.MS-right.team-crousel-arrows{
+  top: 40%;
+  position: absolute;
+  right: -45px;
+}
+
+.MS-left.team-crousel-arrows{
+    left: -50px;
+    top: 40%;
+    position: absolute;
+}
+
+
+.MS-left.category-crousel-arrows {
+  left: -50px;
+  top: 40%;
+  position: absolute;
+}
+
+.MS-right.category-crousel-arrows {
+  top: 40%;
+  position: absolute;
+  right: -45px;
+
+
+}
+
+
+.mat-grid-tile {
+  overflow: inherit !important;
+}
+
+.carousel-inner.category{
+padding-bottom: 10rem;
+}
+
+.mat-grid-tile.circle {
+
+  margin-top: 2rem !important;
+
+}
+// End 04-Dec-2019 

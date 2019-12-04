@@ -8,27 +8,64 @@
     .tile {
         @include mat-elevation(2);
         background-color: mat-color($accent);
-        padding: 8rem;
-        min-height: 200px;
-        min-width: 200px;
+      
         
-        p {
+       /*  p {
             color: $background-color;
             font-family: 'Poppins', sans-serif;
             line-height: 2.4rem;
             font-size: 2rem;
             text-decoration-line: underline;
-        }
+        } */
 
         
     }
   }
 
-  p {
-    color:black;
-    font-family: 'Poppins', sans-serif;
-    line-height: 2.4rem;
-    font-size: 2rem;
-    font-weight: bold;
-    text-decoration-line: none;
+
+
+  mat-card{
+    display: flex;
+    flex: 1 1 auto;
+    
 }
+.footer-card-theme.mat-card {
+
+    margin-right: 13px;
+
+}
+.footer-card-img.mat-card-image {
+
+    width: 170px;
+    object-fit: cover;
+    height: 162px;
+    border-radius: 10px 0px 0px 10px;
+
+}
+.footer-card-theme.mat-card {
+    border-radius: 10px;
+    height: 162px;
+
+}
+.footer-bottom-content {
+
+    text-align: left;
+    font-size: 12px;
+    padding: 20px 49px 0 49px;
+
+}
+.footer-bottom-content-link{
+    text-align: left;
+    font-size: 12px;
+    padding: 0px 49px;
+}
+.bottom-upper-part mat-grid-tile{
+    padding-top: calc(32% - 0.5px) !important;
+  
+}
+.container-fluid.bottom-upper-part mat-grid-list {
+
+    padding-bottom: calc(25% - 0.5px) !important;
+
+}
+

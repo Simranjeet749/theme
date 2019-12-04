@@ -11,7 +11,7 @@
         border: 1rem solid $background-color;
         min-height: 200px;
         min-width: 200px;
-        padding: 10rem;
+      
        
     }
     p {
@@ -25,9 +25,88 @@
    
   }
 
+.tile {
+    background-color:white
+}
+  
   .mat-icon {
  
     color: 
     gray;
+}
+.inner-img img {
+  object-fit: cover;
+  border: 5px solid #fff;
+  height: 77px;
+}
+.inner-img mat-card {
+  width: 76px;
+  height: 77px;
+  border-radius: 12px;
+}
+.example-card.mat-card {
+
+  position: relative;
+  border-radius: 10px 10px 10px 10px;
+
+}
+.inner-img {
+  position: absolute;
+  top: 144px;
+  left: 29px;
+
+}
+.outer-img{
+  width: 272px;
+  height: 185px;
+  object-fit: cover;
+}
+.example-card.mat-card {
+
+  width: 300px;
+
+}
+.outer-img.mat-card-image {
+
+  border-radius: 10px 10px 0 0;
+
+}
+.mat-card-content p {
+
+  text-decoration: none;
+  padding-top: 30px;
+  font-size: 16px;
+  text-align: left;
+  padding-left: 14px;
+
+}
+.bottom-content p {
+  
+  font-size: 11px;
+  color: #ccc;
+  text-decoration: none;
+  
+
+}
+.bottom-content {
+
+    display: flex;
+    justify-content: space-around;
+    margin-top: 13px;
+
+}
+.t-right {
+
+  width: 50%;
+  text-align: right;
+  padding-right: 10px;
+
+}
+.t-left {
+
+  width: 50%;
+  text-align: left;
+  padding-left: 20px;
+
 }
 

@@ -4,10 +4,12 @@ import { CoreModule } from './core/core.module';
 import { ToolbarModule } from './toolbar/toolbar.module';
 import { FooterModule } from './footer/footer.module'
 import { DashboardModule } from './dashboard/dashboard.module';
+import { SortingModule } from './sorting/sorting.module'
 import { AppComponent } from './app.component';
 import { MatTabsModule } from '@angular/material/tabs';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { MatGridListModule } from '@angular/material/grid-list';
+
 
 
 
@@ -30,6 +32,8 @@ import {
   MatPaginatorModule,
   MatCardModule,
 } from '@angular/material';
+
+
 
 
 @NgModule({
@@ -60,6 +64,7 @@ import {
     ToolbarModule,
     FooterModule,
     DashboardModule,
+    SortingModule,
     MatTabsModule
 
   ],
