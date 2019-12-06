@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ThemecardsComponent } from '../themecards/themecards.component';
+
 import {
   MatButtonModule, MatIconModule, MatToolbarModule, MatSlideToggleModule, MatFormFieldModule,
   MatInputModule,
@@ -9,19 +11,12 @@ import {
   MatCardModule,
   MatTableModule
 } from '@angular/material';
-import { DashboardComponent } from './dashboard.component';
-import { TileComponent } from './tile/tile.component';
-import { ThemeService } from '../core/services/theme.service';
-import { SliderComponent } from './slider/slider.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
-import { ThemecardsComponent } from './themecards/themecards.component';
 import { MatGridListModule } from '@angular/material/grid-list';
-
-import { ThemeSliderComponent } from './theme-slider/theme-slider.component';
-import { CategorySliderComponent } from './category-slider/category-slider.component';
 
 
 @NgModule({
+  declarations: [ThemecardsComponent],
   imports: [
     CommonModule,
     CarouselModule,
@@ -39,7 +34,6 @@ import { CategorySliderComponent } from './category-slider/category-slider.compo
 
     MatTableModule
   ],
-  declarations: [DashboardComponent, TileComponent, SliderComponent, ThemecardsComponent, ThemeSliderComponent, CategorySliderComponent],
-  exports: [DashboardComponent]
+  exports: [ThemecardsComponent]
 })
-export class DashboardModule { }
+export class ThemecardsModule { }

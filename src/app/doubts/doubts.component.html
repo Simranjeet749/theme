@@ -1,0 +1,59 @@
+<div class="container">
+    <div class="Doubt-head">
+        <h2>Tire suas Duvidas Tire suas Duvidas</h2>
+        <h2>Tire suas Duvidas</h2>
+        <p>Para utilizer beneficals Para utilizer beneficals Para utilizer beneficals</p>
+    </div>
+    <mat-grid-list cols="2" [gutterSize]="'15px'" rowHeight="30rem">
+        <div class="row-wrap">
+                <mat-grid-tile [colspan]="1" [rowspan]="1" class="outer-gift-wrap">
+                    <mat-card class="card-gift">
+                        <mat-icon>card_giftcard</mat-icon>
+                        <mat-card-content>
+                            <p>
+                                Club de Vantegen
+                            </p>
+                        </mat-card-content>
+                    </mat-card>
+                </mat-grid-tile>
+                <mat-grid-tile [colspan]="1" [rowspan]="1" class="outer-gift-wrap-1">
+                    <mat-card class="card-gift">
+                        <mat-icon>card_giftcard</mat-icon>
+                        <mat-card-content>
+                            <p>
+                                Club de Vantegen
+                            </p>
+                        </mat-card-content>
+
+                    </mat-card>
+                </mat-grid-tile>
+            </div>
+    </mat-grid-list>
+
+    <div>
+        <mat-accordion>
+            <mat-expansion-panel [disabled]="panel.isDisabled" [expanded]="panel.isExpanded" [hideToggle]="true"
+                (click)="click()" (opened)="beforePanelOpened(panel)" (closed)="beforePanelClosed(panel)"
+                (afterCollapse)="afterPanelClosed($event)" (afterExpand)="afterPanelOpened($event)"
+                *ngFor="let panel of accordionList" #mapanel="matExpansionPanel">
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+
+                        <b>Title: {{panel.title}}</b>
+                        <mat-icon>{{icon  ? 'maximize' : 'add' }}</mat-icon>
+
+                    </mat-panel-title>
+                    <mat-panel-description>
+
+                        Currently I am {{panel.isExpanded ? 'open' : 'closed'}}
+                    </mat-panel-description>
+                </mat-expansion-panel-header>
+
+                <p>{{panel.description}}</p>
+                <mat-action-row>
+                    <button mat-flat-button (click)="mapanel.close()">Click to close</button>
+                </mat-action-row>
+            </mat-expansion-panel>
+        </mat-accordion>
+    </div>
+</div>

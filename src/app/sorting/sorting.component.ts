@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'td-sorting',
   templateUrl: './sorting.component.html',

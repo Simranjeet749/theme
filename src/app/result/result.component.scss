@@ -1,0 +1,54 @@
+.container{
+   
+    padding: 2rem;
+}
+.result-container {
+    display: flex;
+}
+.order-filter {
+
+    display: flex;
+    margin-left: 48rem;
+
+}
+.result-container h2 {
+
+    font-weight: bold;
+    font-size: 23px;
+
+}
+.order-filter p {
+
+    padding-right: 31px;
+    font-size: 14px;
+    font-weight: normal;
+    padding-top: 15px;
+
+}
+.mat-form-field {
+
+    position: relative;
+    border: 1px solid  #d0d0d0 !important;
+    border-radius: 5px;
+
+}
+   
+order-filter p {
+
+    padding-right: 31px;
+    font-size: 14px;
+    font-weight: normal;
+    padding-top: 15px;
+
+}
+.mat-form-field {
+
+    position: relative;
+    border: 1px solid  #d0d0d0 !important;
+    border-radius: 5px;
+
+}
+   
+.mat-form-field-appearance-legacy .mat-form-field-underline {
+    height: 0px !important;
+}

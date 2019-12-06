@@ -1,0 +1,53 @@
+.card-gift.mat-card {
+
+    width: 200px !important;
+    height: 170px;
+    border-radius: 10px;
+}
+.outer-gift-wrap{
+    width: calc(27% - 7.5px) !important;
+    left: 254px !important;
+    height: calc(0px + 22rem) !important;
+}
+.outer-gift-wrap-1{
+    width: calc(27% - 7.5px) !important;
+    height: calc(0px + 22rem) !important;
+    
+}
+.card-gift.mat-card:hover{
+    border: 2px solid #2C9DEF;
+    transition: width 3s; 
+    transition: width 3s;
+}
+.card-gift.mat-card:hover mat-icon{
+    color: #2C9DEF;
+}
+.card-gift.mat-card p {
+
+    font-size: 20px;
+
+}
+.card-gift.mat-card mat-icon {
+
+    font-size: 44px;
+    color: #ccc;
+    margin-right: 21px;
+
+}
+.card-gift.mat-card {
+
+    padding-top: 35px;
+
+}
+.Doubt-head {
+    text-align: center;
+    padding-top: 6rem;
+}
+.Doubt-head h2 {
+    font-weight: bold;
+}
+.Doubt-head p {
+    font-size: 13px;
+    color: #4d4d4d;
+    font-weight: normal;
+}
