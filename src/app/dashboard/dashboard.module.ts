@@ -16,9 +16,10 @@ import { SliderComponent } from './slider/slider.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { ThemecardsComponent } from './themecards/themecards.component';
 import { MatGridListModule } from '@angular/material/grid-list';
-
+import { MatDialogModule } from '@angular/material/dialog';
 import { ThemeSliderComponent } from './theme-slider/theme-slider.component';
 import { CategorySliderComponent } from './category-slider/category-slider.component';
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
@@ -30,16 +31,18 @@ import { CategorySliderComponent } from './category-slider/category-slider.compo
     MatSlideToggleModule,
     MatFormFieldModule,
     MatToolbarModule,
+    RouterModule,
     MatInputModule,
     MatGridListModule,
     MatListModule,
     MatCardModule,
     MatSelectModule,
     MatSidenavModule,
-
+    MatDialogModule,
     MatTableModule
   ],
   declarations: [DashboardComponent, TileComponent, SliderComponent, ThemecardsComponent, ThemeSliderComponent, CategorySliderComponent],
-  exports: [DashboardComponent]
+  exports: [DashboardComponent],
+  entryComponents: []
 })
 export class DashboardModule { }

@@ -1,25 +1,29 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { DiscountComponent } from './discount.component';
-import { TilesModule } from '../common/dashboard/tiles/tiles.module';
+import { ResetpasswordComponent } from './resetpassword.component';
 import {
   MatToolbarModule, MatSlideToggleModule, MatButtonModule, MatGridListModule,
   MatListModule, MatIconModule,
-  MatCardModule, MatTabsModule
+  MatCardModule, MatTabsModule,
+  MatFormFieldModule,
+  MatInputModule,
+  MatRippleModule
 } from '@angular/material';
 
 
 
 
 @NgModule({
-
+  declarations: [ResetpasswordComponent],
   imports: [
     CommonModule,
     MatToolbarModule, MatSlideToggleModule, MatButtonModule, MatGridListModule,
     MatListModule, MatIconModule,
-    MatCardModule, MatTabsModule,TilesModule
+    MatCardModule, MatTabsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatRippleModule
   ],
-  declarations: [DiscountComponent],
-  exports: [DiscountComponent]
+  exports: [ResetpasswordComponent]
 })
-export class DiscountModule { }
+export class ResetpasswordModule { }

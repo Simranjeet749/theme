@@ -1,12 +1,46 @@
 .category-theme.mat-card {
     display: flex;
-    padding: 8rem;
+    padding: 35px 0;
+    color: black;
+    box-shadow: none;
 }
+
+
 .automo {
 
-    font-size: 25px !important;
+    font-size: 28px !important;
     font-weight: bold;
     padding-top: 50px !important;
     padding-left: 20px;
+    color: black;
+
+}
+.section{
+    background-color: #fff;
+}
+.favourites a {
+    font-size: 10px;
+    color: #aab2bd;
+}
+.favourites {
+
+    padding: 13px 23px;
+
+}
+.inner-wrap-common p {
+
+    color: #3b3d4f;
+    font-size: 16px;
+    text-decoration: none;
+
+}
+
+.favourites a {
+    font-size: 10px;
+    color: #aab2bd;
+}
+.favourites {
+
+    padding: 13px 23px;
 
 }

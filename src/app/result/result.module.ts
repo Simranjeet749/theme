@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ThemecardsModule } from '../common/dashboard/themecards/themecards.module';
-import { ResultComponent } from './result.component';
 import { TilesModule } from '../common/dashboard/tiles/tiles.module';
+import { ResultComponent } from './result.component';
+
 
 import {
   MatFormFieldModule, MatSelectModule

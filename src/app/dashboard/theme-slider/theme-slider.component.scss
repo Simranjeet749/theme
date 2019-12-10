@@ -12,7 +12,7 @@
         @include mat-elevation(2);
         background-color: mat-color($accent); 
         
-        padding: 5rem 0rem 0 0rem;
+        padding: 0rem 0rem 0 0rem;
 
         p {
             color: $background-color;
@@ -31,12 +31,12 @@
 
 
   p {
-    color: black;
-    font-family: 'Poppins', sans-serif;
-    line-height: 2.4rem;
-    font-size: 2rem;
-    font-weight: bold;
-    text-decoration-line: none;
+
+ text-decoration-line: none;
+  font-family: 'Poppins';
+  font-weight: bold;
+  font-size: 20px;
+  color: #3b3d4f;
 }
 
 .left.carousel-control {
@@ -66,31 +66,12 @@
 }
 
 
-
-
-/* border-radius: 10rem;
-
-height: 130px;
-
-width: 130px; */
-
-// .left.carousel-control{
-//   top: 91px;
-//   text-align: inherit;
-//   left: -30px;
-// }
 .MS-left {
   background-color: 
   transparent;
   border: 0;
 }
-// .right.carousel-control{
-//   top: 91px;
-//   text-align: right;
 
-// right: -27px;
-  
-// }
 .MS-right {
   background-color: 
   transparent;
@@ -105,8 +86,8 @@ width: 130px; */
 }
 .card-resolution img{
   object-fit: cover; /*this makes the image in src fit to the size specified below*/
-  width: 100%; /* Here you can use wherever you want to specify the width and also the height of the <img>*/
-  height: 100%;
+  width: 357px;
+  height: 196px;
 }
 .grid-fix.mat-grid-tile {
 
@@ -122,9 +103,6 @@ width: 130px; */
   padding-bottom: calc(20%) !important;
 }
 
-.card-content {
-    color:#fff !important;
-}
 .carousel-caption.text-left.py-lg-5.py-md-3 {
 
   left: 10% !important;
@@ -132,20 +110,22 @@ width: 130px; */
   top: 54px;
 
 }
+
 .card-content {
-
-  font-size: 25px !important;
-
+  font-size: 24px !important;
+  color:#fff !important;
 }
 .heading {
 
   padding-left: 11px;
+  margin-top: 45px;
+  margin-bottom: 25px;
 
 }
 .category-theme.mat-card img {
 
-  width: 120px;
-  height: 120px;
+  width: 104px;
+  height: 104px;
   border-radius: 50% !important;
   margin: 7px;
 }
@@ -157,34 +137,29 @@ width: 130px; */
 
 // Start 04-Dec-2019 
 
-// .right.carousel-control{
-//   text-align: right;
-// }
-// .left.carousel-control{
-//   text-align: left;
-// }
-
 .MS-right.team-crousel-arrows{
-  top: 40%;
+  top: 46%;
   position: absolute;
   right: -45px;
 }
 
 .MS-left.team-crousel-arrows{
     left: -50px;
-    top: 40%;
+    top: 46%;
     position: absolute;
 }
-
+.map-loc.mat-grid-tile {
+  left: calc(37.333% + 0.333333px) !important;
+}
 
 .MS-left.category-crousel-arrows {
   left: -50px;
-  top: 40%;
+  top: 25%;
   position: absolute;
 }
 
 .MS-right.category-crousel-arrows {
-  top: 40%;
+  top: 25%;
   position: absolute;
   right: -45px;
 
@@ -197,7 +172,7 @@ width: 130px; */
 }
 
 .carousel-inner.category{
-padding-bottom: 10rem;
+padding-bottom: 8rem;
 }
 
 .mat-grid-tile.circle {
@@ -210,7 +185,7 @@ padding-bottom: 10rem;
 .order-filter {
 
   display: flex;
-  margin-left: 45rem;
+  margin-left: 32rem;
 
 }
 .outer-wrap-common{
@@ -223,9 +198,39 @@ display: flex;
 }
 .order-filter p {
 
-  font-size: 12px;
+  font-size: 16px;
   font-weight: normal;
-  padding-right: 17px;
+  
   padding-top: 11px;
 
+}
+
+.mat-list-base .mat-list-item .mat-list-avatar, .mat-list-base .mat-list-option .mat-list-avatar {
+
+  flex-shrink: 0;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  object-fit: cover;
+
+}
+.inner-wrap-common mat-icon {
+  padding-top: 12px;
+  color:#4b4c59;
+  font-size: 20px;
+}
+.inner-wrap-common p {
+  padding-top: 12px;
+  font-size: 16px;
+  font-weight: normal;
+  color:#3b3d4f;
+  padding-right: 15px;
+}
+.order-filter mat-form-field {
+
+  margin-left: 21px;
+
+}
+.inner-filters {
+margin-left: 27px;
 }

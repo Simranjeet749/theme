@@ -1,17 +1,28 @@
 <div layout="row">
-  <mat-grid-list class="bg-col" cols="2" rowHeight="50px">
-    <mat-grid-tile class="header-content">
-      <p>Acessibilidade:</p>
-      <span class="fonts-inc-dic">
-        <a href="javascript:void(0);" class="increase font-weight-bold pl-3">A+</a> |
-        <a href="javascript:void(0);" class="decrease">A-</a>
-      </span>
-    </mat-grid-tile>
-    <mat-grid-tile class="divi"> 
-      <div class="divi-group">
-      <img src="../assets/images/questions-mark.png" width="25"> <span class="pl-2">Duvidas </span>
+  <mat-grid-list class="bg-col" cols="6" rowHeight="48px">
+    <div layout="row">
+      <mat-grid-tile class="header-content" cols="2">
+        <p class="Acessibilidade">Acessibilidade:</p>
+        <span class="fonts-inc-dic">
+          <a routerLink="sorting" routerLinkActive="active" class="increase font-weight-bold pl-3">A+</a> |
+          <a href="javascript:void(0);" class="decrease">A-</a>
+        </span>
+      </mat-grid-tile>
+      <mat-grid-tile  class="colors" cols="2">
+        <div>
+          <p class="color-contrast">Contraste:</p>
+        </div>
+        <a href="#" class="blue-color"></a>
+        <a href="#" class="white-color"></a>
+        <a href="#" class="black-color"></a>
+      </mat-grid-tile>
+      <mat-grid-tile class="divi" cols="2">
+        <div class="divi-group" routerLink="doubt">
+          <img src="../assets/images/questions-mark.png" width="25">
+          <span class="pl-2">Duvidas </span>
+        </div>
+      </mat-grid-tile>
     </div>
-    </mat-grid-tile>
     <!--  <mat-toolbar>
       <mat-toolbar-row>
         <p>Acessibilidade:</p>
@@ -25,7 +36,7 @@
   </mat-grid-list>
 </div>
 
-<mat-grid-list cols="3" rowHeight="75px" style="justify-content: space-between;">
+<mat-grid-list cols="3" rowHeight="80px" style="justify-content: space-between;">
   <mat-grid-tile class="navbar-logo">
     <mat-list>
       <mat-list-item>
@@ -41,31 +52,58 @@
 
   </mat-grid-tile>
   <mat-grid-tile class="map-loc">
-    <p class="search-loc">search</p>
+    <p class="search-loc">São Paulo, SP</p>
     <mat-icon> location_on</mat-icon>
     <!-- <mat-slide-toggle [checked]="isDarkTheme | async" labelPosition="before" (change)="toggleDarkTheme($event.checked)">
       Dark theme</mat-slide-toggle> -->
-    <button class="search-bar" mat-button ng-click="ctrl.initiateSearch()" backgroud-color="primary">
+    <button class="search-bar" mat-button ng-click="ctrl.initiateSearch()">
       <span>buscar em clube de Vantegans..</span>
       <mat-icon>search</mat-icon>
     </button>
 
   </mat-grid-tile>
   <mat-grid-tile>
-    <mat-icon class="notify" matBadge="15" matBadgeColor="warn">notifications_none</mat-icon>
-    <span class="cdk-visually-hidden">
-      Example with a home icon with overlaid badge showing the number 15
-    </span>
+    <div class="wrap-notify">
+    <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+      <mat-icon class="notify" matBadge="15" matBadgeColor="warn">notifications_none</mat-icon>
+      <span class="cdk-visually-hidden">
+        Example with a home icon with overlaid badge showing the number 15
+      </span>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>
+        <mat-icon>person_outline</mat-icon>
+        <span>Editor Profile</span>
+      </button>
+
+      <button mat-menu-item>
+        <mat-icon>input</mat-icon>
+        <span routerLink="/login">Sair</span>
+      </button>
+    </mat-menu>
     <mat-list>
       <mat-list-item>
         <img mat-list-avatar src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="user 1">
         <p mat-line>
-          <span>An awesome description</span>
+          <span>Olá, Maria Eduarda Santos</span>
         </p>
       </mat-list-item>
     </mat-list>
-    <button mat-button>...</button>
+    <button mat-icon-button class="login" [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+      <mat-icon>more_horiz</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>
+        <mat-icon>person_outline</mat-icon>
+        <span>Editor Profile</span>
+      </button>
 
+      <button mat-menu-item>
+        <mat-icon>input</mat-icon>
+        <span routerLink="/login">Sair</span>
+      </button>
+    </mat-menu>
+  </div>
 
   </mat-grid-tile>
 

@@ -1,25 +1,27 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { DiscountComponent } from './discount.component';
-import { TilesModule } from '../common/dashboard/tiles/tiles.module';
+import { LoginComponent } from './login.component'
 import {
   MatToolbarModule, MatSlideToggleModule, MatButtonModule, MatGridListModule,
   MatListModule, MatIconModule,
-  MatCardModule, MatTabsModule
+  MatCardModule, MatTabsModule,
+  MatFormFieldModule,
+  MatInputModule,
+  MatRippleModule,
 } from '@angular/material';
 
 
 
-
 @NgModule({
-
+  declarations: [LoginComponent],
   imports: [
     CommonModule,
     MatToolbarModule, MatSlideToggleModule, MatButtonModule, MatGridListModule,
     MatListModule, MatIconModule,
-    MatCardModule, MatTabsModule,TilesModule
+    MatCardModule, MatTabsModule, MatFormFieldModule,
+    MatInputModule,
+    MatRippleModule
   ],
-  declarations: [DiscountComponent],
-  exports: [DiscountComponent]
+  exports: [LoginComponent]
 })
-export class DiscountModule { }
+export class LoginModule { }

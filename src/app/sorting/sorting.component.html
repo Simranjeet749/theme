@@ -1,9 +1,62 @@
-<mat-card class="category-theme">
-    <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-    <mat-card-content style="display: flex;">
-        <p class="automo">
-            automotivo
-        </p>
-    </mat-card-content>
-</mat-card>
+<div class="section">
+    <div class="container">
+        <p class="favourites"> <a> Favoritos/ Favoritos </a></p>
+        <mat-card class="category-theme">
+            <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+                alt="Photo of a Shiba Inu">
+            <mat-card-content style="display: flex;">
+                <p class="automo">
+                        Favoritos
+                </p>
+            </mat-card-content>
+
+        </mat-card>
+
+        <div class="outer-wrap-common">
+            <div class=" inner-wrap-common">
+                <mat-icon>tune</mat-icon>
+                <p>Filter</p>
+                <mat-form-field appearance="outline">
+                    <mat-label>Select an option</mat-label>
+                    <mat-select>
+                        <mat-option>None</mat-option>
+                        <mat-option value="option1">Option 1</mat-option>
+                        <mat-option value="option2">Option 2</mat-option>
+                        <mat-option value="option3">Option 3</mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <div class="inner-filters">
+                    <mat-form-field appearance="outline">
+                        <mat-label>Select an option Select an option Select an option</mat-label>
+                        <mat-select>
+                            <mat-option>None</mat-option>
+                            <mat-option value="option1">Option 1</mat-option>
+                            <mat-option value="option2">Option 2</mat-option>
+                            <mat-option value="option3">Option 3</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+            </div>
+
+            <div>
+                <div class="order-filter">
+                    <p>ordered by</p>
+                    <mat-form-field appearance="outline">
+                        <mat-label>Relevancia</mat-label>
+                        <mat-select>
+                            <mat-option>None</mat-option>
+                            <mat-option value="option1">Relevancia</mat-option>
+                            <mat-option value="option2">Relevancia</mat-option>
+                            <mat-option value="option3">Relevancia</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
 <td-themecards></td-themecards>
+<td-tiles></td-tiles>

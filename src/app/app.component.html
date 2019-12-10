@@ -1,13 +1,11 @@
-
 <div [ngClass]="{'dark-theme-white': isDarkTheme | async}">
-    <div class="mat-app-background">
-      <td-toolbar></td-toolbar>
-      <div>
-        <aside></aside>
-        <router-outlet></router-outlet>
-        <!-- <td-dashboard></td-dashboard> -->
-        <aside></aside>
-      </div>
-      <td-footer></td-footer>
+  <div class="mat-app-background">
+    <td-toolbar></td-toolbar>
+    <div>
+      <aside></aside>
+      <router-outlet></router-outlet>
+      <aside></aside>
     </div>
-  </div> 
+    <td-footer></td-footer>
+  </div>
+</div>

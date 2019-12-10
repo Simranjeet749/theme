@@ -1,7 +1,7 @@
 .card-gift.mat-card {
 
-    width: 200px !important;
-    height: 170px;
+    width: 312px !important;
+    height: 176px;
     border-radius: 10px;
 }
 .outer-gift-wrap{
@@ -45,9 +45,30 @@
 }
 .Doubt-head h2 {
     font-weight: bold;
+    margin: 15px;
+    font-size: 28px;
+    color:#3b3d4f;
+    font-family: 'poppins';
 }
 .Doubt-head p {
     font-size: 13px;
     color: #4d4d4d;
     font-weight: normal;
+}
+.faq{
+    box-shadow: none !important;
+    background-color: #fafafa;
+    padding: 25px 0;
+}
+.title-description {
+
+    font-size: 12px !important;
+    color: #3b3d4f;
+    font-weight: normal;
+}
+.title b {
+
+    font-size: 21px !important;
+    color: #3b3d4f;
+
 }
