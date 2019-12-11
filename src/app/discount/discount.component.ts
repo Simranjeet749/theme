@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { TilesComponent } from '../common/dashboard/tiles/tiles.component';
+import { DiscountCoupleComponent } from '../common/dialogs/discount-couple/discount-couple.component'
+
 
 @Component({
   selector: 'td-discount',
@@ -15,7 +16,7 @@ export class DiscountComponent implements OnInit {
   }
 
   openDialog() {
-    const dialogRef = this.dialog.open(TilesComponent);
+    const dialogRef = this.dialog.open(DiscountCoupleComponent);
 
     dialogRef.afterClosed().subscribe(result => {
       console.log(`Dialog result: ${result}`);

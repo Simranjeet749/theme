@@ -1,28 +1,35 @@
 @import '~@angular/material/theming';
 
 
-.bg-col {
-    justify-content: space-between;
-}
 
-mat-slide-toggle {
-    font-size: .875rem;
-    margin-left: 20px;
-}
 
-@mixin toolbar-theme($theme) {
+/* @mixin toolbar-theme($theme) {
     $accent: map-get($theme, accent);
     $background: map-get($theme, background);
     $background-color: mat-color($background, card);
         
+
+    .toolbar-section {
         p {
             color: $background-color;
             font-family: 'Poppins';
             line-height: 2.4rem;
             font-size: 1rem;
         }
+       
     }
-   
+}
+    */
+
+    .bg-col {
+        justify-content: space-between;
+        background-color:  #F2F3F6 !important;
+    }
+    
+    mat-slide-toggle {
+        font-size: .875rem;
+        margin-left: 20px;
+    }
   
     .mat-grid-list{
         background:#fff;
@@ -122,10 +129,7 @@ mat-slide-toggle {
         color: #ccc;
     
     }
-    .bg-col {
-        background-color:  #F2F3F6 !important;
-    
-    }
+ 
     .header-content.mat-grid-tile .fonts-inc-dic a {
         text-decoration: none;
         color:  #aaa;

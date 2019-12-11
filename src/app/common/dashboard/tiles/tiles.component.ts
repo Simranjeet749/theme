@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import {MatDialog, MatDialogConfig } from '@angular/material/dialog';
+import {TilesDialogComponent} from '../../dialogs/tiles-dialog/tiles-dialog.component';
+
+
 
 @Component({
   selector: 'td-tiles',
@@ -7,9 +11,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TilesComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit() {
   }
 
+  openDialog() {
+    const dialogConfig = new MatDialogConfig();
+    this.dialog.open(TilesDialogComponent, dialogConfig);
+  }
 }

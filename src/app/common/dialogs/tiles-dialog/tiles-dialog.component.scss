@@ -1,0 +1,9 @@
+.formfield-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .formfield-container > * {
+    width: 100%;
+  }
+  

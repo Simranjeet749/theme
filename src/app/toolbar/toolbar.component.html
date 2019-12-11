@@ -8,14 +8,17 @@
           <a href="javascript:void(0);" class="decrease">A-</a>
         </span>
       </mat-grid-tile>
-      <mat-grid-tile  class="colors" cols="2">
+      <mat-grid-tile class="colors" cols="2">
         <div>
           <p class="color-contrast">Contraste:</p>
         </div>
+        
         <a href="#" class="blue-color"></a>
         <a href="#" class="white-color"></a>
         <a href="#" class="black-color"></a>
       </mat-grid-tile>
+      <mat-slide-toggle  (change)="toggleDarkTheme($event.checked)">Dark theme
+        </mat-slide-toggle>
       <mat-grid-tile class="divi" cols="2">
         <div class="divi-group" routerLink="doubt">
           <img src="../assets/images/questions-mark.png" width="25">
@@ -23,16 +26,6 @@
         </div>
       </mat-grid-tile>
     </div>
-    <!--  <mat-toolbar>
-      <mat-toolbar-row>
-        <p>Acessibilidade:</p>
-        <span class="fonts-inc-dic">
-          <a href="javascript:void(0);" class="increase font-weight-bold pl-3">A+</a> |
-          <a href="javascript:void(0);" class="decrease">A-</a>
-        </span>
-        <img src="../assets/images/questions-mark.png" width="25"> <span class="pl-2">Duvidas </span>
-      </mat-toolbar-row>
-    </mat-toolbar> -->
   </mat-grid-list>
 </div>
 
@@ -64,48 +57,59 @@
   </mat-grid-tile>
   <mat-grid-tile>
     <div class="wrap-notify">
-    <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
-      <mat-icon class="notify" matBadge="15" matBadgeColor="warn">notifications_none</mat-icon>
-      <span class="cdk-visually-hidden">
-        Example with a home icon with overlaid badge showing the number 15
-      </span>
-    </button>
-    <mat-menu #menu="matMenu">
-      <button mat-menu-item>
-        <mat-icon>person_outline</mat-icon>
-        <span>Editor Profile</span>
+      <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+        <mat-icon class="notify" matBadge="15" matBadgeColor="warn">notifications_none</mat-icon>
+        <span class="cdk-visually-hidden">
+          Example with a home icon with overlaid badge showing the number 15
+        </span>
       </button>
+      <mat-menu #menu="matMenu">
+        <mat-list>
 
-      <button mat-menu-item>
-        <mat-icon>input</mat-icon>
-        <span routerLink="/login">Sair</span>
-      </button>
-    </mat-menu>
-    <mat-list>
-      <mat-list-item>
-        <img mat-list-avatar src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="user 1">
-        <p mat-line>
-          <span>Olá, Maria Eduarda Santos</span>
-        </p>
-      </mat-list-item>
-    </mat-list>
-    <button mat-icon-button class="login" [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
-      <mat-icon>more_horiz</mat-icon>
-    </button>
-    <mat-menu #menu="matMenu">
-      <button mat-menu-item>
-        <mat-icon>person_outline</mat-icon>
-        <span>Editor Profile</span>
-      </button>
+          <div class="row">
+            <h3 mat-subheader>Notificacoes</h3>
+            <mat-icon>delete</mat-icon>
+            <mat-divider></mat-divider>
+          </div>
 
-      <button mat-menu-item>
-        <mat-icon>input</mat-icon>
-        <span routerLink="/login">Sair</span>
+          <mat-list-item>
+            <h4 mat-line>Label</h4>
+            <p mat-line> Donec urna ante, tempus at tortor sit amet, pellentesque sagittis ligula.</p>
+            <mat-icon mat-list-icon></mat-icon>
+            <mat-divider></mat-divider>
+          </mat-list-item>
+
+          <mat-list-item>
+            <h4 mat-line>Label</h4>
+            <p mat-line> Donec urna ante, tempus at tortor sit amet, pellentesque sagittis ligula. </p>
+            <mat-icon mat-list-icon></mat-icon>
+            <mat-divider></mat-divider>
+          </mat-list-item>
+        </mat-list>
+      </mat-menu>
+      <mat-list>
+        <mat-list-item>
+          <img mat-list-avatar src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="user 1">
+          <p mat-line>
+            <span>Olá, Maria Eduarda Santos</span>
+          </p>
+        </mat-list-item>
+      </mat-list>
+      <button mat-icon-button class="login" [matMenuTriggerFor]="menus" aria-label="Example icon-button with a menu">
+        <mat-icon>more_horiz</mat-icon>
       </button>
-    </mat-menu>
-  </div>
+      <mat-menu #menus="matMenu">
+        <button mat-menu-item>
+          <mat-icon>person_outline</mat-icon>
+          <span>Editor Profile</span>
+        </button>
+        <mat-divider></mat-divider>
+        <button mat-menu-item>
+          <mat-icon>input</mat-icon>
+          <span routerLink="/login">Sair</span>
+        </button>
+      </mat-menu>
+    </div>
 
   </mat-grid-tile>
-
-
 </mat-grid-list>

@@ -6,9 +6,9 @@
     $background-color: mat-color($background, card);
 
     .tile {
-       /*  @include mat-elevation(2);
+        @include mat-elevation(2);
         background-color: mat-color($accent);
-        border: 1rem solid $background-color; */
+        border: 1rem solid $background-color;
         min-height: 200px;
         min-width: 200px;
        

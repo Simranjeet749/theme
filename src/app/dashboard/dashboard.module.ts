@@ -43,6 +43,6 @@ import { RouterModule } from '@angular/router';
   ],
   declarations: [DashboardComponent, TileComponent, SliderComponent, ThemecardsComponent, ThemeSliderComponent, CategorySliderComponent],
   exports: [DashboardComponent],
-  entryComponents: []
+  entryComponents: [ThemecardsComponent]
 })
 export class DashboardModule { }

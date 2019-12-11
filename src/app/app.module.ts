@@ -17,7 +17,9 @@ import { LoginModule } from '../app/login/login.module'
 import { TilesModule } from './common/dashboard/tiles/tiles.module';
 import { DoubtsModule } from './doubts/doubts.module';
 import { ResetpasswordModule } from './resetpassword/resetpassword.module';
-
+import { MatDialogModule } from '@angular/material/dialog';
+import { TilesDialogModule } from './common/dialogs/tiles-dialog/tiles-dialog.module';
+import { DiscountCoupleModule } from './common/dialogs/discount-couple/discount-couple.module';
 import {
   MatButtonModule,
   MatToolbarModule,
@@ -45,11 +47,13 @@ import {
     AppComponent
   ],
   imports: [
+    MatDialogModule,
     MatButtonModule,
     MatToolbarModule,
     TilesModule,
     MatIconModule,
     CarouselModule,
+    TilesDialogModule,
     MatBadgeModule,
     MatSidenavModule,
     RouterModule,
@@ -74,6 +78,7 @@ import {
     FooterModule,
     DashboardModule,
     ThemecardsModule,
+    DiscountCoupleModule,
     SortingModule,
     MatTabsModule,
     AppRoutingModule,

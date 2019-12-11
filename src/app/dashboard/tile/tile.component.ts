@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
-import {MatDialog, MatDialogConfig } from '@angular/material/dialog';
 import { ThemecardsComponent } from '../themecards/themecards.component';
+import { MatDialog, MatDialogConfig } from "@angular/material/dialog";
 
 
 @Component({
@@ -11,13 +10,19 @@ import { ThemecardsComponent } from '../themecards/themecards.component';
 })
 export class TileComponent implements OnInit {
 
-  constructor(private matDialog: MatDialog) { }
+  constructor(private dialog: MatDialog) { }
 
   ngOnInit() {
   }
 
+
   openDialog() {
+
     const dialogConfig = new MatDialogConfig();
-    this.matDialog.open( ThemecardsComponent,dialogConfig);
+
+
+    const dialogRef = this.dialog.open(ThemecardsComponent,
+      dialogConfig);
+
   }
 }

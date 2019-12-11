@@ -1,6 +1,7 @@
 @import '../app/dashboard/tile/tile.component';
 @import '../app/dashboard/theme-slider/theme-slider.component';
 
+
 @mixin component-themes($theme) {
   @include tile-theme($theme);
   @include theme-slider-theme($theme);

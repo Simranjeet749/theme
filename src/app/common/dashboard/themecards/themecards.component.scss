@@ -11,6 +11,7 @@
         border: 1rem solid $background-color; */
         min-height: 200px;
         min-width: 200px;
+       
       
        
     }
@@ -36,13 +37,14 @@
 }
 .inner-img img {
   object-fit: cover;
-  border: 5px solid #fff;
-  height: 77px;
+  border: 4px solid#fff;
+  height: 65px;
+  width: 65px;
 }
 .inner-img mat-card {
-  width: 76px;
-  height: 77px;
-  border-radius: 12px;
+  width: 64px;
+  height: 64px;
+  border-radius: 8px;
 }
 .example-card.mat-card {
 
@@ -58,12 +60,13 @@
 }
 .outer-img{
   width: 272px;
-  height: 185px;
+  height: 180px;
   object-fit: cover;
 }
 .example-card.mat-card {
 
-  width: 300px;
+  width: 264px;
+  height: 336px;
 
 }
 .outer-img.mat-card-image {
@@ -75,18 +78,22 @@
 
   text-decoration: none;
   padding-top: 30px;
-  font-size: 16px;
+  font-size: 14px;
   text-align: left;
   padding-left: 14px;
 
 }
+.example-card.mat-card mat-card-content {
+
+  margin-bottom: 29px;
+
+}
 .bottom-content p {
   
-  font-size: 11px;
-  color: #ccc;
+  font-size: 12px;
+  color:#aab2bd;
   text-decoration: none;
-  
-
+  font-weight: normal;
 }
 .bottom-content {
 
@@ -100,6 +107,7 @@
   width: 50%;
   text-align: right;
   padding-right: 10px;
+  
 
 }
 .t-left {
@@ -107,6 +115,14 @@
   width: 50%;
   text-align: left;
   padding-left: 20px;
+
+}
+.t-right mat-icon{
+  color: #aab2bd !important;
+}
+.theme-cards.mat-grid-list {
+
+  padding-bottom: calc(33.5%) !important;
 
 }
 

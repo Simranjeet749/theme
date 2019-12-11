@@ -6,12 +6,10 @@
     $accent: map-get($theme, accent);
     $background: map-get($theme, background);
     $background-color: mat-color($background, card);
-
-    
+/* 
     .section {
         @include mat-elevation(2);
         background-color: mat-color($accent); 
-        
         padding: 0rem 0rem 0 0rem;
 
         p {
@@ -25,13 +23,12 @@
         .mat-card-content {
           color: rgb(0, 128, 107) 
         }
-    }
+    } */
     
   }
 
 
-  p {
-
+p {
  text-decoration-line: none;
   font-family: 'Poppins';
   font-weight: bold;
